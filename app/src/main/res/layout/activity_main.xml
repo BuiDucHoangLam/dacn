@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ActivityContentBase"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:screenOrientation="portrait"
+    android:background="@drawable/pkt2"
+    android:orientation="vertical"
+    android:weightSum="10"
+    >
+
+    <!--    <FrameLayout-->
+    <!--        android:id="@+id/main_vision_click_view"-->
+    <!--        style="@style/Clickable"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="0dp"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintHeight_percent=".5"-->
+    <!--        app:layout_constraintHorizontal_bias="0.333"-->
+    <!--        app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--        app:layout_constraintRight_toRightOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintVertical_bias="0.668">-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="102dp"-->
+    <!--            android:layout_gravity="center"-->
+    <!--            android:drawableTop="@drawable/ic_vision_s"-->
+    <!--            android:drawablePadding="16dp"-->
+    <!--            android:text="@string/main_vision_button"-->
+    <!--            android:textAlignment="center"-->
+    <!--            android:textAppearance="@style/TextAppearanceMainVisionNlp"-->
+    <!--            android:textSize="50dp"-->
+    <!--            android:textStyle="bold" />-->
+    <!--    </FrameLayout>-->
+
+
+    <!--    <Button-->
+    <!--        android:id="@+id/btnShow"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="80dp"-->
+    <!--        android:layout_marginStart="20dp"-->
+    <!--        android:layout_marginTop="264dp"-->
+    <!--        android:layout_marginEnd="20dp"-->
+    <!--        android:background="@android:color/white"-->
+    <!--        android:drawableLeft="@drawable/logo1"-->
+
+    <!--        android:paddingLeft="10dp"-->
+    <!--        android:text="Giới thiệu"-->
+    <!--        android:textSize="32sp"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent">-->
+
+
+    <!--    </Button>-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/btnRealtime"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="80dp"-->
+    <!--        android:layout_marginStart="20dp"-->
+    <!--        android:layout_marginTop="12dp"-->
+    <!--        android:layout_marginEnd="20dp"-->
+    <!--        android:background="@android:color/white"-->
+    <!--        android:drawableRight="@drawable/logo1"-->
+    <!--        android:paddingLeft="10dp"-->
+
+    <!--        android:text="Realtime"-->
+    <!--        android:textSize="32sp"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/btnShow" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/btnCapture"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="80dp"-->
+    <!--        android:layout_marginStart="20dp"-->
+    <!--        android:layout_marginTop="16dp"-->
+    <!--        android:layout_marginEnd="20dp"-->
+    <!--        android:background="@android:color/white"-->
+    <!--        android:drawableLeft="@drawable/logo1"-->
+    <!--        android:paddingLeft="10dp"-->
+
+    <!--        android:text="Chụp ảnh"-->
+    <!--        android:textSize="32sp"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/btnRealtime" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/btnGetImage"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="80dp"-->
+    <!--        android:layout_marginStart="20dp"-->
+    <!--        android:layout_marginTop="16dp"-->
+    <!--        android:layout_marginEnd="20dp"-->
+    <!--        android:background="@android:color/white"-->
+    <!--        android:drawableRight="@drawable/logo1"-->
+    <!--        android:paddingRight="10dp"-->
+    <!--        android:text="Chọn ảnh"-->
+    <!--        android:textSize="32sp"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/btnCapture" />-->
+
+    <LinearLayout
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="vertical"
+        android:weightSum="10"
+        android:layout_marginBottom="30dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:weightSum="10"
+            android:orientation="horizontal">
+
+<!--            <ImageView-->
+<!--                android:layout_width="40dp"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:src="@drawable/icon_green"-->
+<!--                />-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Flower Recognize"
+                android:textColor="#ffffff"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="5"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bật camera và trải nghiệm"
+                android:textColor="#ffffff"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/shape_corner"
+        android:id="@+id/btnShow"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="9dp"
+        tools:layout_editor_absoluteY="-15dp"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@drawable/shape_corner"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:paddingTop="-10dp"
+                android:src="@drawable/icon_pink" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:gravity="bottom"
+                android:paddingLeft="10dp"
+                android:text="Giới thiệu"
+                android:textColor="#000"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:background="@drawable/shap_haft_corner"
+            app:cardElevation="0dp"
+            app:cardCornerRadius="@dimen/shape_radius"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/red"
+
+                />
+        </androidx.cardview.widget.CardView>
+<!--                <LinearLayout-->
+<!--                    android:layout_width="168dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="6"-->
+<!--                    android:gravity="right"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:background="@drawable/shap_haft_corner"-->
+<!--                    android:weightSum="10">-->
+<!--                    <ImageView-->
+<!--                        android:layout_width="fill_parent"-->
+<!--                        android:layout_height="fill_parent"-->
+<!--                        android:src ="@drawable/red"-->
+
+<!--                        />-->
+
+<!--                </LinearLayout>-->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/shape_corner"
+        android:id="@+id/btnRealtime"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="9dp"
+        tools:layout_editor_absoluteY="-15dp"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:layout_width="136dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:background="@drawable/shape_corner"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:paddingTop="-10dp"
+                android:src="@drawable/icon_yellow" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:gravity="bottom"
+                android:paddingLeft="10dp"
+                android:text="Realtime"
+                android:textColor="#000"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:background="@drawable/shap_haft_corner"
+            app:cardCornerRadius="@dimen/shape_radius"
+            app:cardElevation="0dp"
+
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/orange1"
+
+                />
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/shape_corner"
+        android:id="@+id/btnCapture"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="9dp"
+        tools:layout_editor_absoluteY="-15dp"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:layout_width="136dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:background="@drawable/shape_corner"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:paddingTop="-10dp"
+                android:src="@drawable/icon_greenn" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:gravity="bottom"
+                android:paddingLeft="10dp"
+                android:text="Chụp ảnh"
+                android:textColor="#000"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:background="@drawable/shap_haft_corner"
+            app:cardCornerRadius="@dimen/shape_radius"
+            app:cardElevation="0dp"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/green1"
+
+                />
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@drawable/shape_corner"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/btnGetImage"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="9dp"
+        tools:layout_editor_absoluteY="-15dp"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:layout_width="136dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:background="@drawable/shape_corner"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:paddingTop="-10dp"
+                android:src="@drawable/icon_blue" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:gravity="bottom"
+                android:paddingLeft="10dp"
+                android:text="Chọn ảnh"
+                android:textColor="#000"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:background="@drawable/shap_haft_corner"
+            app:cardCornerRadius="@dimen/shape_radius"
+            app:cardElevation="0dp"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/blue1"
+
+                />
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+    <!--    <FrameLayout-->
+    <!--        android:id="@+id/main_nlp_click_view"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="0dp"-->
+    <!--        style="@style/Clickable"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintHeight_percent=".5"-->
+    <!--        app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--        app:layout_constraintRight_toRightOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/main_vision_click_view">-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:drawableTop="@drawable/ic_language_s"-->
+    <!--            android:layout_gravity="center"-->
+    <!--            android:text="@string/main_nlp_button"-->
+    <!--            android:drawablePadding="16dp"-->
+    <!--            android:textAppearance="@style/TextAppearanceMainVisionNlp" />-->
+    <!--    </FrameLayout>-->
+
+</LinearLayout>

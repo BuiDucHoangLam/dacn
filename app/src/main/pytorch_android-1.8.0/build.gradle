@@ -1,0 +1,2 @@
+configurations.maybeCreate("default")
+artifacts.add("default", file('pytorch_android_1.8.0.aar'))

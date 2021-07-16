@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ActivityContentBase"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:screenOrientation="portrait"
+    android:background="@drawable/introduce"
+    android:orientation="vertical"
+    android:weightSum="10"
+    >
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Giảng viên hướng dẫn: Th.S Trần Thống"
+           android:textColor="#fff"
+           android:textSize="30dp"/>
+       <TextView
+           android:textColor="#fff"
+           android:layout_marginTop="30dp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Trợ giảng: Phan Trung Tính"
+           android:textSize="28dp"/>
+   </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="35dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Thành viên"
+            android:textColor="#fff"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="25dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:textColor="#fff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phạm Bá Xuân Duy"
+                android:textSize="28dp"/>
+            <TextView
+                android:textColor="#fff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phạm Hoàng Việt"
+                android:textSize="28dp"/>
+            <TextView
+                android:textColor="#fff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nguyễn Trọng Hiếu"
+                android:textSize="28dp"/>
+            <TextView
+                android:textColor="#fff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nguyễn Đức Đề"
+                android:textSize="28dp"/>
+            <TextView
+                android:textColor="#fff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bùi Đức Hoàng Lâm"
+                android:textSize="28dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
